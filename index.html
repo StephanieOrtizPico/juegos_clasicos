@@ -3,20 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio - Iconos de Juegos</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
+    <title>Botón circular dentro de un rectángulo en HTML</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Aprovecha toda la altura del viewport */
+            margin: 0;
+            background-color: #f0f0f0; /* Color de fondo de la página */
+        }
+        .rectangulo-exterior {
+            width: 650px; /* Ancho del rectángulo exterior */
+            height: 300px; /* Altura del rectángulo exterior */
+            background-color: #3498db; /* Color de fondo azul */
+            border: 2px solid #2980b9; /* Borde sólido azul más oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px; /* Espacio interno */
+            box-sizing: border-box; /* Para incluir el padding en el tamaño total */
+            position: relative; /* Posicionamiento relativo para los elementos internos */
+        }
+        .rectangulo-interior {
+            width: 320px; /* Ancho del rectángulo interior */
+            height: 280px; /* Altura del rectángulo interior */
+            background-color: #e74c3c; /* Color de fondo rojo */
+            border: 2px solid #c0392b; /* Borde sólido rojo más oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo exterior */
+            top: 50%; /* Posiciona desde la mitad del rectángulo exterior */
+            left: 50%; /* Posiciona desde la mitad del rectángulo exterior */
+            transform: translate(-50%, -50%); /* Centra exactamente el rectángulo interior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rectangulo-interior2 {
+            width: 300px; /* Ancho del rectángulo interior */
+            height: 260px; /* Altura del rectángulo interior */
+            background-color: #383534; /* Color de fondo rojo */
+            border: 2px solid #917b79; /* Borde sólido rojo más oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo exterior */
+            top: 50%; /* Posiciona desde la mitad del rectángulo exterior */
+            left: 50%; /* Posiciona desde la mitad del rectángulo exterior */
+            transform: translate(-50%, -50%); /* Centra exactamente el rectángulo interior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circulo {
+            width: 40px; /* Diámetro del círculo */
+            height: 40px; /* Diámetro del círculo */
+            background-color: #f39c12; /* Color de fondo naranja */
+            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 15%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 87%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+        .circulo:hover {
+            background-color: #e67e22; /* Cambia el color de fondo al pasar el cursor */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Juegos Clásicos</h1>
-        <div class="game-icons">
-            <a href="juego_ahorcado_07.html"><img src="icono_juego1.png" alt="Juego 1"></a>
-            <a href="juego_tictactoe.html"><img src="icono_juego2.png" alt="Juego 2"></a>
-            <a href="juego_rompecabezas.html"><img src="icono_juego3.png" alt="Juego 3"></a>
-            <a href="juego_minas.html"><img src="icono_juego4.png" alt="Juego 4"></a>
-            <a href="juego_memoria.html"><img src="icono_juego5.png" alt="Juego 5"></a>
-            <a href="juego_invaders.html"><img src="icono_juego6.png" alt="Juego 6"></a>
-            <!-- Añade más elementos <a> para más juegos -->
+    <div class="rectangulo-exterior">
+        <div class="circulo" onclick="">X</div>
+        <div class="rectangulo-interior">
+            <div class="rectangulo-interior2"></div>
         </div>
     </div>
 </body>
