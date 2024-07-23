@@ -3,77 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rectángulo con otros dentro en HTML</title>
+    <title>Cruz más ancha en HTML y CSS</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Aprovecha toda la altura del viewport */
-            margin: 0;
-            background-color: #f0f0f0; /* Color de fondo de la página */
-        }
-        .rectangulo-exterior {
-            width: 600px; /* Ancho del rectángulo exterior */
-            height: 300px; /* Altura del rectángulo exterior */
-            background-color: #3498db; /* Color de fondo azul */
-            border: 2px solid #2980b9; /* Borde sólido azul más oscuro */
-            border-radius: 10px; /* Bordes redondeados */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative; /* Necesario para posicionar el rectángulo interior */
-        }
-        .rectangulo-interior {
-            width: 200px; /* Ancho del rectángulo interior */
-            height: 250px; /* Altura del rectángulo interior */
-            background-color: #e74c3c; /* Color de fondo rojo */
-            border: 2px solid #c0392b; /* Borde sólido rojo más oscuro */
-            border-radius: 10px; /* Bordes redondeados */
-            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo exterior */
-            top: 50%; /* Posiciona desde la mitad del rectángulo exterior */
-            left: 50%; /* Posiciona desde la mitad del rectángulo exterior */
-            transform: translate(-50%, -50%); /* Centra exactamente el rectángulo interior */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .rectangulo-interior-2 {
-            width: 100px; /* Ancho del rectángulo interior 2 */
-            height: 150px; /* Altura del rectángulo interior 2 */
-            background-color: #f39c12; /* Color de fondo naranja */
-            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
-            border-radius: 10px; /* Bordes redondeados */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            color: #fff; /* Color del texto */
-        }
-        .circulo {
-            width: 100px; /* Diámetro del círculo */
-            height: 100px; /* Diámetro del círculo */
-            background-color: #e74c3c; /* Color de fondo rojo */
-            border: 2px solid #c0392b; /* Borde sólido rojo más oscuro */
-            border-radius: 50%; /* Hace que el borde sea circular */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            color: #fff; /* Color del texto */
-            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
-            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        .cruz {
+            position: relative;
+            width: 200px;
+            height: 200px;
         }
 
+        .cruz:before, .cruz:after {
+            content: '';
+            position: absolute;
+            background-color: #000;
+        }
+
+        .cruz:before {
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 30px; /* Aumentamos la altura del brazo horizontal */
+            margin-top: -15px; /* Ajustamos el margen para centrar verticalmente */
+        }
+
+        .cruz:after {
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 30px; /* Aumentamos el ancho del brazo vertical */
+            margin-left: -15px; /* Ajustamos el margen para centrar horizontalmente */
+        }
     </style>
 </head>
 <body>
-    <div class="rectangulo-exterior">
-        <div class="rectangulo-interior">
-            <div class="rectangulo-interior-2">
-                <!-- No hay contenido dentro del div interior 2 -->
-            </div>
-        </div>
-    </div>
+    <div class="cruz"></div>
 </body>
 </html>

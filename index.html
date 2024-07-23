@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botón circular dentro de un rectángulo en HTML</title>
+    <title>Index</title>
     <style>
         body {
             display: flex;
@@ -69,17 +69,143 @@
             transition: background-color 0.3s ease; /* Transición suave del color de fondo */
             position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
             top: 15%; /* Posiciona desde la mitad del rectángulo interior */
-            left: 87%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 88%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+        .circulo2 {
+            width: 40px; /* Diámetro del círculo */
+            height: 40px; /* Diámetro del círculo */
+            background-color: #f39c12; /* Color de fondo naranja */
+            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 30%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 95%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+        .circulo3 {
+            width: 40px; /* Diámetro del círculo */
+            height: 40px; /* Diámetro del círculo */
+            background-color: #f39c12; /* Color de fondo naranja */
+            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 30%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 81%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+        .circulo4 {
+            width: 40px; /* Diámetro del círculo */
+            height: 40px; /* Diámetro del círculo */
+            background-color: #f39c12; /* Color de fondo naranja */
+            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 45%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 88%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+            .circulog {
+            width: 120px; /* Diámetro del círculo */
+            height: 120px; /* Diámetro del círculo */
+            background-color: #f39c12; /* Color de fondo naranja */
+            border: 2px solid #e67e22; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 30%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 13%; /* Posiciona desde la mitad del rectángulo interior */
+            transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
+        }
+        .circulog2 {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #e6d9c4; /* Color de fondo naranja */
+            border: 2px solid #504b47; /* Borde sólido naranja más oscuro */
+            border-radius: 50%; /* Hace que el borde sea circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #fff; /* Color del texto */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo interior */
+            top: 30%; /* Posiciona desde la mitad del rectángulo interior */
+            left: 13%; /* Posiciona desde la mitad del rectángulo interior */
             transform: translate(-50%, -50%); /* Centra exactamente el botón circular */
         }
         .circulo:hover {
             background-color: #e67e22; /* Cambia el color de fondo al pasar el cursor */
+        }
+
+        .cruz {
+            width: 30px; /* Ancho del rectángulo interior */
+            height: 90px; /* Altura del rectángulo interior */
+            background-color: #e74c3c; /* Color de fondo rojo */
+            border: 2px solid #c0392b; /* Borde sólido rojo más oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo exterior */
+            top: 75%; /* Posiciona desde la mitad del rectángulo exterior */
+            left: 13%; /* Posiciona desde la mitad del rectángulo exterior */
+            transform: translate(-50%, -50%); /* Centra exactamente el rectángulo interior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cruz2 {
+            width: 90px; /* Ancho del rectángulo interior */
+            height: 30px; /* Altura del rectángulo interior */
+            background-color: #e74c3c; /* Color de fondo rojo */
+            border: 2px solid #c0392b; /* Borde sólido rojo más oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            position: absolute; /* Posicionamiento absoluto con respecto al rectángulo exterior */
+            top: 75%; /* Posiciona desde la mitad del rectángulo exterior */
+            left: 13%; /* Posiciona desde la mitad del rectángulo exterior */
+            transform: translate(-50%, -50%); /* Centra exactamente el rectángulo interior */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <div class="rectangulo-exterior">
         <div class="circulo" onclick="">X</div>
+        <div class="circulo2" onclick="">A</div>
+        <div class="circulo3" onclick="">Y</div>
+        <div class="circulo4" onclick="">B</div>
+        <div class="circulog" onclick=""></div>
+        <div class="circulog2" onclick=""></div>
+        <div class="cruz" onclick=""></div>
+        <div class="cruz2" onclick=""></div>
         <div class="rectangulo-interior">
             <div class="rectangulo-interior2"></div>
         </div>
